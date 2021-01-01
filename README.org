@@ -3,6 +3,28 @@
 
 Hyperbook is an order-matching engine used for financial market simulation.
 
+** To compile: run the following commands at root level:
+
+#+begin_src bash
+  mkdir build
+  cmake -S . -B build -DCMAKE_EXPORT_COMPILE_COMMANDS=ON
+  make -C build/
+#+end_src
+
+** To get compile_commands.json into root directory: run the following command:
+
+#+begin_src bash
+  mv build/compile_commands.json .
+#+end_src
+
+** To run the program: run the following command at root level
+
+#+begin_src bash
+  ./build/apps/driver
+#+end_src
+
 ** TODO:
 *** TODO Create GMP types for working with financial data.
 *** TODO Create a data structure to hold L2 data.
+*** TODO Integrate a testing framework
+*** TODO Integrate Doxygen
