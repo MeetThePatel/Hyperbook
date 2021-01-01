@@ -1,0 +1,8 @@
+#+TITLE: Hyperbook
+#+AUTHOR: Meet Patel
+
+Hyperbook is an order-matching engine used for financial market simulation.
+
+** TODO:
+*** TODO Create GMP types for working with financial data.
+*** TODO Create a data structure to hold L2 data.
