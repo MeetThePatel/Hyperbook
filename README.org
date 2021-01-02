@@ -8,7 +8,7 @@ Hyperbook is an order-matching engine used for financial market simulation.
 #+begin_src bash
   mkdir build
   cmake -S . -B build -DCMAKE_EXPORT_COMPILE_COMMANDS=ON
-  make -C build/
+  cmake --build build
 #+end_src
 
 ** To get compile_commands.json into root directory: run the following command:

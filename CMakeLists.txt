@@ -9,6 +9,13 @@ project(
 
 set(CMAKE_CXX_EXTENSIONS OFF)
 
+include(FetchContent)
+FetchContent_Declare(
+  fmtlib
+  GIT_REPOSITORY https://github.com/fmtlib/fmt.git
+  )
+FetchContent_MakeAvailable(fmtlib)
+
 set_property(GLOBAL PROPERTY USE_FOLDERS ON)
 
 add_subdirectory(src)
