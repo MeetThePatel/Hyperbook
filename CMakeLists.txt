@@ -15,6 +15,9 @@ set_property(GLOBAL PROPERTY USE_FOLDERS ON)
 
 include(CTest)
 
+find_package(Doxygen)
+add_subdirectory(docs)
+
 find_package(Boost REQUIRED)
 
 include(FetchContent)
@@ -28,5 +31,3 @@ add_subdirectory(src)
 add_subdirectory(apps)
 
 add_subdirectory(tests)
-
-# TODO: Integrate Doxygen
