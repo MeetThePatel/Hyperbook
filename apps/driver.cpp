@@ -10,6 +10,8 @@ int main() {
   Order y {EXECUTION_TYPE::market, ORDER_TYPE::sell, 1, 532, 143, 10512, 10430};
   Order z {EXECUTION_TYPE::limit, ORDER_TYPE::sell, 2, 32, 3443, 1003, 243};
 
+  std::cout << sizeof(x) << "\n";
+
   auto start = std::chrono::high_resolution_clock::now();
 
   x.print();

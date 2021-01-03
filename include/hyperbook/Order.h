@@ -1,5 +1,4 @@
-#ifndef ORDER_H
-#define ORDER_H
+#pragma once
 
 #include <cstdint>
 #include <iostream>
@@ -21,5 +20,3 @@ struct Order {
   friend std::ostream& operator<< (std::ostream&, const Order&);
   void print();
 };
-
-#endif

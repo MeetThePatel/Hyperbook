@@ -1,5 +1,4 @@
-#ifndef LIMITORDERBOOK_H
-#define LIMITORDERBOOK_H
+#pragma once
 
 #include <list>
 #include <queue>
@@ -34,5 +33,3 @@ struct OrderBook {
 
   int insert(Order);
 };
-
-#endif

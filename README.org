@@ -23,6 +23,12 @@ Hyperbook is an order-matching engine used for financial market simulation.
   ./build/apps/driver
 #+end_src
 
+** To run tests, run the following command (after building the project)
+
+#+begin_src bash
+  cmake --build build -t test
+#+end_src
+
 ** TODO:
 *** TODO Create GMP types for working with financial data.
 *** TODO Create a data structure to hold L2 data.
