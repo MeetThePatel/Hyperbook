@@ -6,9 +6,9 @@
 
 int main() {
 
-  Order x {EXECUTION_TYPE::limit, ORDER_TYPE::buy, 0, 634, 100, 10000, 9430};
-  Order y {EXECUTION_TYPE::market, ORDER_TYPE::sell, 1, 532, 143, 10512, 10430};
-  Order z {EXECUTION_TYPE::limit, ORDER_TYPE::sell, 2, 32, 3443, 1003, 243};
+  Order x {ORDER_TYPE::limit, ORDER_SIDE::buy, 0, 634, 100, 10000, 9430};
+  Order y {ORDER_TYPE::market, ORDER_SIDE::sell, 1, 532, 143, 10512, 10430};
+  Order z {ORDER_TYPE::limit, ORDER_SIDE::sell, 2, 32, 3443, 1003, 243};
 
   std::cout << sizeof(x) << "\n";
 
