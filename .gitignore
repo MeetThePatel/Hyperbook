@@ -1,2 +1,6 @@
-build/
+build/*
+!build/docs/html
+
+build-tidy/
+infer-out/
 compile_commands.json
