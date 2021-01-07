@@ -1,35 +1,41 @@
 #pragma once
 
-#include <list>
 #include <queue>
+#include <list>
+#include <unordered_map>
 #include <cstdint>
 
 #include <hyperbook/Order.h>
 
-enum struct LOB_SIDE : uint8_t { bid = 0, ask = 1 };
+struct OrderBookLevel {
+  USD price_level;
+  ORDER_SIDE		side;
+  std::queue<Order>	orders;
+  uint16_t		level_volume;
 
-struct LimitOrderBookLevel {
-  std::queue<Order>	level;
-  uint64_t		level_volume;
-
-  int insert(Order);
-};
-
-struct LimitOrderBook {
-  LOB_SIDE				lob_side;
-  std::list<LimitOrderBookLevel>	book;
-  uint64_t				book_volume;
-
-  int insert(Order);
+  OrderBookLevel () = default;
+  OrderBookLevel (USD price_level, ORDER_SIDE side);
 };
 
 struct OrderBook {
-  LimitOrderBook	bid_book;
-  LimitOrderBook	ask_book;
-  uint64_t		total_volume;
+  std::vector<OrderBookLevel>	data;
+  uint64_t			bid_volume;
+  uint64_t			ask_volume;
 
-  OrderBook();
-  ~OrderBook();
+  std::vector<OrderBookLevel>::iterator last;
+  std::vector<OrderBookLevel>::iterator lowest_ask;
+  std::vector<OrderBookLevel>::iterator highest_bid;
 
-  int insert(Order);
+  OrderBook (USD previous_close, float price_band_percentage);
+
+  USD get_limit_down () const;
+  USD get_limit_up () const;
+};
+
+struct OrderBooks {
+  std::unordered_map<uint16_t, std::unique_ptr<OrderBook>> order_books;
+
+  std::unique_ptr<Order>	insert	(Order);
+  uint8_t			cancel	(std::unique_ptr<Order>);
+  void				publish ();
 };

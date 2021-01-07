@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['equity_5fid',['equity_id',['../struct_order.html#a5fe2b08f3d43093f48fc48b9ee2a1bcb',1,'Order']]]
+  ['bid_5fvolume',['bid_volume',['../struct_order_book.html#aaa68773f5060825952939c08fdcdba47',1,'OrderBook']]]
 ];

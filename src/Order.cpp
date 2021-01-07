@@ -4,7 +4,7 @@
 #include <fmt/color.h>
 #include <fmt/locale.h>
 
-void Order::print() {
+void Order::print() const noexcept {
   fmt::print(fg(fmt::color::white) | bg(fmt::color::black) | fmt::emphasis::bold,
 	     "{:>{}} ", this->order_id, 10);
   fmt::print(fg(fmt::color::white) | bg(fmt::color::black),

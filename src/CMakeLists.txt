@@ -1,4 +1,4 @@
-file(GLOB HEADER_LIST CONFIGURE_DEPENDS "${Hyperbook_SOURCE_DIR}/include/hyperbook/*.h")
+file(GLOB HEADER_LIST CONFIGURE_DEPENDS "${Hyperbook_SOURCE_DIR}/include/hyperbook/**/*.h")
 
 add_library(hyperbook_lib ${HEADER_LIST} hyperbook.cpp OrderBook.cpp Order.cpp)
 
