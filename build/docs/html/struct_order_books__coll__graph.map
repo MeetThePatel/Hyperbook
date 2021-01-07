@@ -1,0 +1,10 @@
+<map id="OrderBooks" name="OrderBooks">
+<area shape="rect" id="node1" title="This struct represents all of the OrderBooks being handled by the Hyperbook." alt="" coords="60,679,153,704"/>
+<area shape="rect" id="node2" title=" " alt="" coords="30,565,183,617"/>
+<area shape="rect" id="node3" title=" " alt="" coords="8,479,205,504"/>
+<area shape="rect" id="node4" href="$struct_order_book.html" title="This class represents the order book for a particular security." alt="" coords="64,392,149,417"/>
+<area shape="rect" id="node5" title=" " alt="" coords="5,265,208,291"/>
+<area shape="rect" id="node6" href="$struct_order_book_level.html" title="This struct represents a price level in the OrderBook." alt="" coords="48,179,165,204"/>
+<area shape="rect" id="node7" title=" " alt="" coords="36,92,177,117"/>
+<area shape="rect" id="node8" href="$struct_order.html" title="This struct represents an order being sent to the order matcher." alt="" coords="79,5,134,31"/>
+</map>
