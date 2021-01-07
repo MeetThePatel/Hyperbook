@@ -79,9 +79,9 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a2ff6501722b46540266b2e08695e0ecf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_order.html#a2ff6501722b46540266b2e08695e0ecf">print</a> ()</td></tr>
-<tr class="memdesc:a2ff6501722b46540266b2e08695e0ecf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Print out the <a class="el" href="struct_order.html" title="This struct represents an order being sent to the order matcher.">Order</a>, formatted with fmt.  <a href="#a2ff6501722b46540266b2e08695e0ecf">More...</a><br /></td></tr>
-<tr class="separator:a2ff6501722b46540266b2e08695e0ecf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef78818fff13bbc6eaf372c0bec15baf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_order.html#aef78818fff13bbc6eaf372c0bec15baf">print</a> () const noexcept</td></tr>
+<tr class="memdesc:aef78818fff13bbc6eaf372c0bec15baf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Print out the <a class="el" href="struct_order.html" title="This struct represents an order being sent to the order matcher.">Order</a>, formatted with fmt.  <a href="#aef78818fff13bbc6eaf372c0bec15baf">More...</a><br /></td></tr>
+<tr class="separator:aef78818fff13bbc6eaf372c0bec15baf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -91,38 +91,46 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a9dc1bfff86f1546365a1692216ef7ae8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_order_8h.html#a9ca5aa41bb902bef1344aa2da88a1b60">ORDER_SIDE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_order.html#a9dc1bfff86f1546365a1692216ef7ae8">order_side</a></td></tr>
 <tr class="memdesc:a9dc1bfff86f1546365a1692216ef7ae8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Signifies whether the order is a buy order or a sell order.  <a href="#a9dc1bfff86f1546365a1692216ef7ae8">More...</a><br /></td></tr>
 <tr class="separator:a9dc1bfff86f1546365a1692216ef7ae8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a849ff155b8b2b26743ce2b4fa83d847e"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_order.html#a849ff155b8b2b26743ce2b4fa83d847e">order_id</a></td></tr>
-<tr class="memdesc:a849ff155b8b2b26743ce2b4fa83d847e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unique ID number of the order.  <a href="#a849ff155b8b2b26743ce2b4fa83d847e">More...</a><br /></td></tr>
-<tr class="separator:a849ff155b8b2b26743ce2b4fa83d847e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5fe2b08f3d43093f48fc48b9ee2a1bcb"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_order.html#a5fe2b08f3d43093f48fc48b9ee2a1bcb">equity_id</a></td></tr>
-<tr class="memdesc:a5fe2b08f3d43093f48fc48b9ee2a1bcb"><td class="mdescLeft">&#160;</td><td class="mdescRight">ID number of the target equity.  <a href="#a5fe2b08f3d43093f48fc48b9ee2a1bcb">More...</a><br /></td></tr>
-<tr class="separator:a5fe2b08f3d43093f48fc48b9ee2a1bcb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad734a031e4533396bbd350cd85868120"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_order.html#ad734a031e4533396bbd350cd85868120">account_id</a></td></tr>
-<tr class="memdesc:ad734a031e4533396bbd350cd85868120"><td class="mdescLeft">&#160;</td><td class="mdescRight">ID number of the account placing the order.  <a href="#ad734a031e4533396bbd350cd85868120">More...</a><br /></td></tr>
-<tr class="separator:ad734a031e4533396bbd350cd85868120"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2ca9afa442c492410ed17a3c6bbd46a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_order_8h.html#a175d3c624a58dedd8e80a0aa0f2285c0">ORDER_ID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_order.html#ae2ca9afa442c492410ed17a3c6bbd46a">order_id</a></td></tr>
+<tr class="memdesc:ae2ca9afa442c492410ed17a3c6bbd46a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unique ID number of the order.  <a href="#ae2ca9afa442c492410ed17a3c6bbd46a">More...</a><br /></td></tr>
+<tr class="separator:ae2ca9afa442c492410ed17a3c6bbd46a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a16a3c6d7f16e7f141e6a24f2fa3342"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_order_8h.html#a76ebf64c9fa1ff4b1fc554f1166c4a9a">EQUITY_ID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_order.html#a2a16a3c6d7f16e7f141e6a24f2fa3342">equity_id</a></td></tr>
+<tr class="memdesc:a2a16a3c6d7f16e7f141e6a24f2fa3342"><td class="mdescLeft">&#160;</td><td class="mdescRight">ID number of the target equity.  <a href="#a2a16a3c6d7f16e7f141e6a24f2fa3342">More...</a><br /></td></tr>
+<tr class="separator:a2a16a3c6d7f16e7f141e6a24f2fa3342"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add1d02c6a1a21f7e366d808583619007"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_order_8h.html#a0ff460835edfcc39e0df31c641e0913b">ACCOUNT_ID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_order.html#add1d02c6a1a21f7e366d808583619007">account_id</a></td></tr>
+<tr class="memdesc:add1d02c6a1a21f7e366d808583619007"><td class="mdescLeft">&#160;</td><td class="mdescRight">ID number of the account placing the order.  <a href="#add1d02c6a1a21f7e366d808583619007">More...</a><br /></td></tr>
+<tr class="separator:add1d02c6a1a21f7e366d808583619007"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aedd31ec68644b85a281d99aaf9fcb004"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_order.html#aedd31ec68644b85a281d99aaf9fcb004">quantity</a></td></tr>
 <tr class="memdesc:aedd31ec68644b85a281d99aaf9fcb004"><td class="mdescLeft">&#160;</td><td class="mdescRight">Quantity of shares being ordered.  <a href="#aedd31ec68644b85a281d99aaf9fcb004">More...</a><br /></td></tr>
 <tr class="separator:aedd31ec68644b85a281d99aaf9fcb004"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6be41c4c8271e2d489dabf7784c0413c"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_order.html#a6be41c4c8271e2d489dabf7784c0413c">price</a></td></tr>
-<tr class="memdesc:a6be41c4c8271e2d489dabf7784c0413c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Target price of shares (0 if market order).  <a href="#a6be41c4c8271e2d489dabf7784c0413c">More...</a><br /></td></tr>
-<tr class="separator:a6be41c4c8271e2d489dabf7784c0413c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afbb2e088d7eafaebc8d8a3a9ef835443"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_order_8h.html#a0340c013bc3af1ff667fa1cbd26bf64f">USD</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_order.html#afbb2e088d7eafaebc8d8a3a9ef835443">price</a></td></tr>
+<tr class="memdesc:afbb2e088d7eafaebc8d8a3a9ef835443"><td class="mdescLeft">&#160;</td><td class="mdescRight">Target price of shares (0 if market order).  <a href="#afbb2e088d7eafaebc8d8a3a9ef835443">More...</a><br /></td></tr>
+<tr class="separator:afbb2e088d7eafaebc8d8a3a9ef835443"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This struct represents an order being sent to the order matcher. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a2ff6501722b46540266b2e08695e0ecf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2ff6501722b46540266b2e08695e0ecf">&#9670;&nbsp;</a></span>print()</h2>
+<a id="aef78818fff13bbc6eaf372c0bec15baf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef78818fff13bbc6eaf372c0bec15baf">&#9670;&nbsp;</a></span>print()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">Order::print </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Print out the <a class="el" href="struct_order.html" title="This struct represents an order being sent to the order matcher.">Order</a>, formatted with fmt. </p>
@@ -130,14 +138,14 @@ Public Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="ad734a031e4533396bbd350cd85868120"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad734a031e4533396bbd350cd85868120">&#9670;&nbsp;</a></span>account_id</h2>
+<a id="add1d02c6a1a21f7e366d808583619007"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#add1d02c6a1a21f7e366d808583619007">&#9670;&nbsp;</a></span>account_id</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint16_t Order::account_id</td>
+          <td class="memname"><a class="el" href="_order_8h.html#a0ff460835edfcc39e0df31c641e0913b">ACCOUNT_ID</a> Order::account_id</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -146,14 +154,14 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a5fe2b08f3d43093f48fc48b9ee2a1bcb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5fe2b08f3d43093f48fc48b9ee2a1bcb">&#9670;&nbsp;</a></span>equity_id</h2>
+<a id="a2a16a3c6d7f16e7f141e6a24f2fa3342"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2a16a3c6d7f16e7f141e6a24f2fa3342">&#9670;&nbsp;</a></span>equity_id</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint16_t Order::equity_id</td>
+          <td class="memname"><a class="el" href="_order_8h.html#a76ebf64c9fa1ff4b1fc554f1166c4a9a">EQUITY_ID</a> Order::equity_id</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -162,14 +170,14 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a849ff155b8b2b26743ce2b4fa83d847e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a849ff155b8b2b26743ce2b4fa83d847e">&#9670;&nbsp;</a></span>order_id</h2>
+<a id="ae2ca9afa442c492410ed17a3c6bbd46a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae2ca9afa442c492410ed17a3c6bbd46a">&#9670;&nbsp;</a></span>order_id</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint64_t Order::order_id</td>
+          <td class="memname"><a class="el" href="_order_8h.html#a175d3c624a58dedd8e80a0aa0f2285c0">ORDER_ID</a> Order::order_id</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -210,14 +218,14 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a6be41c4c8271e2d489dabf7784c0413c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6be41c4c8271e2d489dabf7784c0413c">&#9670;&nbsp;</a></span>price</h2>
+<a id="afbb2e088d7eafaebc8d8a3a9ef835443"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afbb2e088d7eafaebc8d8a3a9ef835443">&#9670;&nbsp;</a></span>price</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint16_t Order::price</td>
+          <td class="memname"><a class="el" href="_order_8h.html#a0340c013bc3af1ff667fa1cbd26bf64f">USD</a> Order::price</td>
         </tr>
       </table>
 </div><div class="memdoc">

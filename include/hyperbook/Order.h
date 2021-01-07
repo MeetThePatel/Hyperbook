@@ -31,6 +31,11 @@ enum struct ORDER_SIDE : uint8_t {
   sell = 1	//!< Sell Order.
 };
 
+typedef uint64_t ORDER_ID;
+typedef uint16_t EQUITY_ID;
+typedef uint16_t ACCOUNT_ID;
+typedef uint16_t USD;
+
 /** \struct Order
  *  \brief This struct represents an order being sent to the order matcher.
  */
@@ -38,14 +43,14 @@ enum struct ORDER_SIDE : uint8_t {
 struct Order {
   ORDER_TYPE	order_type;	//!< Signifies whether the order is a limit order or a market order.
   ORDER_SIDE	order_side;	//!< Signifies whether the order is a buy order or a sell order.
-  uint64_t	order_id;	//!< Unique ID number of the order.
-  uint16_t	equity_id;	//!< ID number of the target equity.
-  uint16_t	account_id;	//!< ID number of the account placing the order.
+  ORDER_ID	order_id;	//!< Unique ID number of the order.
+  EQUITY_ID	equity_id;	//!< ID number of the target equity.
+  ACCOUNT_ID	account_id;	//!< ID number of the account placing the order.
   uint16_t	quantity;	//!< Quantity of shares being ordered.
-  uint16_t	price;		//!< Target price of shares (0 if market order).
+  USD		price;		//!< Target price of shares (0 if market order).
 
   /** \fn print
    *  \brief Print out the Order, formatted with fmt.
    */
-  void print();
+  void print() const noexcept;
 };

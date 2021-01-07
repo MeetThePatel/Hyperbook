@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['price',['price',['../struct_order.html#a6be41c4c8271e2d489dabf7784c0413c',1,'Order']]]
+  ['equity_5fid',['equity_id',['../struct_order.html#a2a16a3c6d7f16e7f141e6a24f2fa3342',1,'Order']]]
 ];
