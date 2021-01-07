@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['quantity',['quantity',['../struct_order.html#aedd31ec68644b85a281d99aaf9fcb004',1,'Order']]]
+  ['highest_5fbid',['highest_bid',['../struct_order_book.html#a5f846ae26191df15b18a33ea69cf5b24',1,'OrderBook']]]
 ];
