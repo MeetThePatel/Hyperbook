@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['get_5flimit_5fdown',['get_limit_down',['../struct_order_book.html#a7232e3b98bfdb3a9e3734461e18192bf',1,'OrderBook']]],
-  ['get_5flimit_5fup',['get_limit_up',['../struct_order_book.html#a737123ac792aab4cf0af3812de1ff099',1,'OrderBook']]]
+  ['get_5flimit_5fdown',['get_limit_down',['../struct_order_book.html#a0215daa810efc6f92658f3a8278067fd',1,'OrderBook']]],
+  ['get_5flimit_5fup',['get_limit_up',['../struct_order_book.html#a065668b1fd7719866fdc2e5cbb062feb',1,'OrderBook']]]
 ];
